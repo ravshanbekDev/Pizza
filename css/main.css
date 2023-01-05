@@ -236,4 +236,7 @@ input {
     border: 1px solid chocolate;
     width: 300px;
   }
+  .add {
+    display: flex;
+  }
 }
