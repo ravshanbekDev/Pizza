@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="./image/pizza.png" type="image/x-icon">
+  <link rel="stylesheet" href="./css/main.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Pizza</title>
+</head>
+<body>
+  <button class="themeswitch" onclick="themeswitch()">🌗</button>
+  
+  <div class="container">
+    <div class="pizza__card">
+      <h2 class="pizza__caption">Pizza order</h2>
+      <form action="#">
+        <div class="pizza__input">
+          <label for="text"><input type="text" id="user" placeholder="User name"/></label>
+          <label for="tel"><input type="tel" id="tel" placeholder="Phone number"/></label>
+          <label for="email"><input type="email" id="email" placeholder="User address"/></label>
+        </div>
+        <div class="pizza__drop">
+          <h2>Dough thickness:</h2>
+          <select id="select">
+            <option value="none" disabled selected>volume</option>
+            <option value="Thin" id="thin">Thin</option>
+            <option value="Medium" id="medium">Medium</option>
+            <option value="Thick" id="thick">Thick</option>
+          </select>
+        </div>
+        <div class="pizza__radius">
+          <h2>Size:</h2>
+          <div id="fun0" class="pizza__radius">
+            <label for="fun1"><input type="radio" id="fun1" />
+              <p class="text-black">25 sm</p></label>
+              <label for="fun2"><input type="radio" id="fun2" />
+                <p class="text-black">30 sm</p></label>
+                <label for="fun3"><input type="radio" id="fun3" />
+                  <p class="text-black">35 sm</p></label>
+                </div>
+              </div>
+              <h2 class="pizza__title">On Pizza:</h2>
+              <div class="pizza__check">
+                <div class="flex items-start justify-between" id="pizzafirst">
+                  <label for="tomato"
+                  ><input type="checkbox" id="tomato" value="Tomato" /> Tomato</label>
+                  <label for="pickled"><input type="checkbox" id="pickled" value="Pickled cucumber" />
+                    Pickled cucumber
+                  </label>
+                </div>
+                <div
+                class="flex items-start justify-between mr-11"
+                id="pizzasecound">
+                <label for="turkey"><input type="checkbox" id="turkey" value="Turkey meat" />Turkey meat</label>
+                <label for="mushroom" ><input type="checkbox" id="mushroom" value="Mushroom" />Mushroom</label>
+              </div>
+              <div class="flex items-start justify-between mr-10" id="pizzaUz">
+                <label for="olive"><input type="checkbox" id="olive" value="Olive" /> Olive</label>
+                <label for="horse"><input type="checkbox" id="horse" value="Horse meat" /> Horse meat</label>
+              </div>
+            </div>
+            <h2 class="pizza__title">Add:</h2>
+            <div class="pizza__check" id="pizza">
+              <label><input type="checkbox" id="pepper" value="Pepper" />Pepper</label>
+              <label><input type="checkbox" id="sausage" value="Sausage cucumber" /> Sausage cucumber</label>
+            </div>
+            <div class="pizza__wrapp_block">
+              <button type="button" onclick="myfun()" class="pizza__btn" id="btn">
+                Save
+              </button>
+            </div>
+          </form>
+        </div>
+        
+        <div class="pizza__wrapper bg-gray-900 text-white">
+          <h2 id="name">name:</h2>
+          <h2 id="phone">Phone:</h2>
+          <h2 id="address">Address:</h2>
+          <hr />
+          <h2 id="dough">Dough thickness:</h2>
+          <h2 id="size">Size:</h2>
+          <div class="flex gap-2">
+            <h2>On Pizza:</h2>
+            <h2 id="on"></h2>
+          </div>
+          <div class="flex gap-3">
+            <h2>Add:</h2>
+            <h2 id="add"></h2>
+          </div>
+          <hr/>
+          <h2 id="total">Total:</h2>
+        </div>
+      </div>
+      
+      <script src="./js/main.js"></script>
+    </body>
+    </html>
